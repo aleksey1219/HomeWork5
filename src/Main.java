@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -30,6 +31,18 @@ public class Main {
             System.out.println("установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("нет сообщений");
+        }
+    }
+
+    public static void task3() {
+        System.out.println("Решение задачи номер 3");
+        int yaer = 2018;
+        if (yaer % 4 == 0) {
+            if ((yaer % 100 != 0) || (yaer % 400 == 0)) {
+                System.out.println(yaer + " год является високосным");
+            }
+        } else {
+            System.out.println(yaer + " год не является високосным");
         }
     }
 }
