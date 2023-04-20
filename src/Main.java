@@ -36,11 +36,9 @@ public class Main {
 
     public static void task3() {
         System.out.println("Решение задачи номер 3");
-        int yaer = 2018;
-        if (yaer % 4 == 0) {
-            if ((yaer % 100 != 0) || (yaer % 400 == 0)) {
-                System.out.println(yaer + " год является високосным");
-            }
+        int yaer = 2012;
+        if (yaer % 4 == 0 && (yaer % 100 != 0) || (yaer % 400 == 0)) {
+            System.out.println(yaer + " год является високосным");
         } else {
             System.out.println(yaer + " год не является високосным");
         }
